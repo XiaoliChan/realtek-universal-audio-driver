@@ -4,7 +4,7 @@ Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider    = %Provider%
 ExtensionId = {1b98ef90-ca0e-11e7-8f1a-0800200c9a66}
-DriverVer = 11/12/2018,1.1.3.54788
+DriverVer = 07/02/2019,1.2.5.59003
 CatalogFile = AVoluteSS3Ext.cat
 
 [SourceDisksNames]
@@ -61,9 +61,29 @@ SS3ProductSettings.cab
 %Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_1043183E
 %Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_10431881
 %Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_104318D1
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0900&SUBSYS_10432230
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1168&SUBSYS_1043874D
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1220&SUBSYS_104387BE
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1220&SUBSYS_104387C4
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1168&SUBSYS_104387C5
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1168&SUBSYS_104387C6
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0887&SUBSYS_10432260
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0887&SUBSYS_10432280
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1168&SUBSYS_104322A0
+%Device.ExtensionDesc% = DeviceExtension_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_10431D61
 
 [DeviceExtension_Install]
 CopyFiles = AVoluteProdSettings.CopyList
+AddReg    = ProductId_AddReg
+
+[ProductId_AddReg]
+HKR,InterfaceSetting\SysCustomizedFx\EP\0,%PKEY_PRODUCTID%,,%PRODUCTID%
+HKR,InterfaceSetting\SysRecCustomizedFx\EP\0,%PKEY_PRODUCTID%,,%PRODUCTID%
+HKR,InterfaceSetting\SysRecVolCustomizedFx\EP\0,%PKEY_PRODUCTID%,,%PRODUCTID%
+
+HKR,InterfaceSetting\SysCustomizedFx\EP\0,%PKEY_ISST_PRODUCTID%,,%PRODUCTID%
+HKR,InterfaceSetting\SysRecCustomizedFx\EP\0,%PKEY_ISST_PRODUCTID%,,%PRODUCTID%
+HKR,InterfaceSetting\SysRecVolCustomizedFx\EP\0,%PKEY_ISST_PRODUCTID%,,%PRODUCTID%
 
 [DeviceExtension_Install.Components]
 AddComponent = AVOLUTE_NH3APO,,APO_Install
@@ -76,6 +96,7 @@ Description = "A-Volute Nh3 Audio Effects Component"
 Provider              	= "A-Volute"
 Device.ExtensionDesc 	= "A-Volute APO Extension"
 DiskId1              	= "A-Volute Extension Installation Disk"
-
-
+PKEY_PRODUCTID			= "{F363DF17-A750-4AC3-B7B5-2BBEFFA9085F},11"
+PKEY_ISST_PRODUCTID		= "{9B8844FE-1650-40E5-A5EA-11B8C83821A1},12"
+PRODUCTID				= "A-Volute.SonicStudio3"
 

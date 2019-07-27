@@ -3,7 +3,7 @@ Signature   = "$WINDOWS NT$"
 Class       = SoftwareComponent
 ClassGuid   = {5c4c3332-344d-483c-8739-259e934c9cc8}
 Provider    = %Creative%
-DriverVer = 12/07/2018,2.0.0.30
+DriverVer = 04/30/2019,2.0.0.36
 CatalogFile = CreativeComponent.cat
 
 [SourceDisksNames]
@@ -42,6 +42,12 @@ AddReg = MBAPO.x86.AddReg, MBAPO.AddReg
 [Component_Install.NTamd64]
 CopyFiles = MBAPO.x64.CopyList, MBAPO.thunk.CopyList
 AddReg = MBAPO.x64.AddReg, MBAPO.AddReg
+
+[Component_Install.NTx86.Services]
+AddService = , 2
+
+[Component_Install.NTamd64.Services]
+AddService = , 2
 
 [MBAPO.x86.CopyList]
 MBAPO232.dll

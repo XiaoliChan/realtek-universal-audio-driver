@@ -5,7 +5,7 @@ ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=Fortemedia
 ExtensionId = {6BB685A9-87AA-4BE8-A345-055DB3E4452A}
 CatalogFile=IntcDMicExt.cat
-DriverVer = 11/13/2018,09.21.3229.23
+DriverVer = 04/26/2019,09.21.3229.37
 
 [Manufacturer]
 Intel(R) Corporation = Intel, NTAMD64.10.0...16273
@@ -20,6 +20,14 @@ Intel(R) Corporation = Intel, NTAMD64.10.0...16273
 %Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_A348&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_860C103C&REV_0001
 %Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_A348&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_860F103C&REV_0001
 %Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_861F103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8637103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8655103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_869D103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_86A8103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_86A5103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_86A3103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_86A0103C&REV_0001
+%Device.ExtensionDesc% = IntcAudModelWSstPpDll, INTELAUDIO\CTLR_DEV_9DC8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_869B103C&REV_0001
 
 [IntcAudModelWSstPpDll]
 AddReg = FortemediaSstPpDll.AddReg
@@ -31,12 +39,24 @@ AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn1.Topo_2%,IntcAudModel.DmicInput1.
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn1.Topo_2%,IntcAudModel.DmicInput1.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn1.Topo_4%,IntcAudModel.DmicInput1.Topo
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn1.Topo_4%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn1.Topo_1_24%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn1.Topo_1_24%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn1.Topo_2_24%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn1.Topo_2_24%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn1.Topo_4_24%,IntcAudModel.DmicInput1.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn1.Topo_4_24%,IntcAudModel.DmicInput1.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_1%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_1%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_2%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_2%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_4%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_4%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_1_24%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_1_24%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_2_24%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_2_24%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn2.Topo_4_24%,IntcAudModel.DmicInput2.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn2.Topo_4_24%,IntcAudModel.DmicInput2.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn3.Topo_1%,IntcAudModel.DmicInput3.Topo
 AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_DmicIn3.Topo_1%,IntcAudModel.DmicInput3.Topo
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_DmicIn3.Topo_2%,IntcAudModel.DmicInput3.Topo
@@ -81,9 +101,9 @@ HKR,"FX\\0",%PKEY_MFX_KeywordDetector_ProcessingModes_Supported_For_Streaming%,%
 ;HKR,"FX\\0",%PKEY_BYPASS_TP_EFFECTS%,%REG_DWORD%,0x1
 HKR,"FX\\0",%K2_ID%,0x00010001,0x01
 HKR,"FX\\0",%K51_ID%,0x00010001,0x32
-HKR,"FX\\0",%K7_ID%,0x00010001,0x860000
+HKR,"FX\\0",%K7_ID%,0x00010001,0x860100
 HKR,"FX\\0",%BACK_K2_ID%,0x00010001,0x01
-HKR,"FX\\0",%BACK_K7_ID%,0x00010001,0x860000
+HKR,"FX\\0",%BACK_K7_ID%,0x00010001,0x860100
 
 HKR,"EP\\0", %PKEY_AudioEndpoint_Default_VolumeInDb%, 0x00010001, 0x140000
 
@@ -150,9 +170,15 @@ KSCATEGORY_TOPOLOGY = "{DDA54A40-1E4C-11D1-A050-405705C10000}"
 KSNAME_DmicIn1.Topo_1 = "IntcDMicTopo_1_48_16_D0"
 KSNAME_DmicIn1.Topo_2 = "IntcDMicTopo_2_48_16_D0"
 KSNAME_DmicIn1.Topo_4 = "IntcDMicTopo_4_48_16_D0"
+KSNAME_DmicIn1.Topo_1_24 = "IntcDMicTopo_1_48_24_D0"
+KSNAME_DmicIn1.Topo_2_24 = "IntcDMicTopo_2_48_24_D0"
+KSNAME_DmicIn1.Topo_4_24 = "IntcDMicTopo_4_48_24_D0"
 KSNAME_DmicIn2.Topo_1 = "IntcDMicTopo_1_48_16_D1"
 KSNAME_DmicIn2.Topo_2 = "IntcDMicTopo_2_48_16_D1"
 KSNAME_DmicIn2.Topo_4 = "IntcDMicTopo_4_48_16_D1"
+KSNAME_DmicIn2.Topo_1_24 = "IntcDMicTopo_1_48_24_D1"
+KSNAME_DmicIn2.Topo_2_24 = "IntcDMicTopo_2_48_24_D1"
+KSNAME_DmicIn2.Topo_4_24 = "IntcDMicTopo_4_48_24_D1"
 KSNAME_DmicIn3.Topo_1 = "IntcDMicTopo_1 _48_16_0"
 KSNAME_DmicIn3.Topo_2 = "IntcDMicTopo_2 _48_16_0"
 KSNAME_DmicIn3.Topo_4 = "IntcDMicTopo_4 _48_16_0"
